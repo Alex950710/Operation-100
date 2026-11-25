@@ -114,6 +114,13 @@ const CONFIG = {
 };
 // ========================== END CONFIG ===========================
 const app=document.getElementById('app'), statusEl=document.getElementById('status'), reset=document.getElementById('reset');
+const KEY = 'last-race:' + CONFIG.version;
+
+// 設定存檔有效期限（小時）
+const EXPIRY_HOURS = 2;
+
+const EXPIRY_TIME = EXPIRY_HOURS * 60 * 60 * 1000;
+
 const initial = () => ({
     step: 0,
     reviewed: [],
@@ -122,8 +129,46 @@ const initial = () => ({
 
 let state = initial();
 
+// 讀取存檔及檢查有效期限
+try {
+    const raw = JSON.parse(localStorage.getItem(KEY) || 'null');
+
+    if (
+        raw &&
+        Number.isInteger(raw.step) &&
+        raw.step >= 0 &&
+        raw.step <= 5 &&
+        Number.isFinite(raw.savedAt) &&
+        Date.now() - raw.savedAt < EXPIRY_TIME
+    ) {
+        state = {
+            step: raw.step,
+            reviewed: Array.isArray(raw.reviewed)
+                ? raw.reviewed.filter(
+                    x => Number.isInteger(x) && x >= 0 && x < 3
+                )
+                : [],
+            notice: typeof raw.notice === 'string'
+                ? raw.notice
+                : ''
+        };
+    } else {
+        // 刪除已過期或無效的存檔
+        localStorage.removeItem(KEY);
+    }
+} catch {}
+
+// 儲存遊戲進度及目前時間
 function save() {
-    // Game progress is not stored permanently.
+    try {
+        localStorage.setItem(
+            KEY,
+            JSON.stringify({
+                ...state,
+                savedAt: Date.now()
+            })
+        );
+    } catch {}
 }
 const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const horseSvg=`<svg viewBox="0 0 80 80" aria-hidden="true" class="portrait"><rect width="80" height="80" fill="#26332f"/><path d="M19 67c0-18 4-26 13-35l-1-14 12 10 9-8 1 13 15 17c2 5-1 9-7 9l-12-4-5 12z" fill="#c7aa75" fill-opacity=".27" stroke="#d5b981" stroke-width="2"/><circle cx="51" cy="41" r="2" fill="#d5b981"/><path d="M31 33c-10 3-15 11-17 21" fill="none" stroke="#d5b981" stroke-width="2"/></svg>`;
