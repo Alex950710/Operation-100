@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#101619"><title>The Last Race — Investigation Bureau</title>
+<style>
+:root{color-scheme:dark;--bg:#101619;--panel:#182125;--panel2:#1c282c;--line:#334144;--muted:#a2afac;--ink:#e8e5da;--gold:#d5b981;--green:#8bc5a7;--red:#e49086;--mono:ui-monospace,SFMono-Regular,Consolas,monospace;--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#26332e 0,transparent 42%),var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,'PingFang TC','Microsoft JhengHei',sans-serif;line-height:1.75;min-height:100vh}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.4}button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px}a{color:var(--gold)}.wrap{max-width:1160px;margin:auto;padding:0 28px}.top{border-bottom:1px solid var(--line);background:#101619d9}.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:78px}.brand{display:flex;align-items:center;gap:13px}.seal{width:45px;height:45px;display:grid;place-items:center;border:1px solid #8c7955;border-radius:50%;color:var(--gold);flex:none}.seal svg{width:27px;height:27px}.brand strong{font-size:13px;letter-spacing:.12em;display:block}.micro,.eyebrow,.tag,.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase}.micro{color:var(--muted);letter-spacing:.08em}.status{font:11px var(--mono);letter-spacing:.08em;color:var(--red);white-space:nowrap}.status:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor;margin-right:7px;box-shadow:0 0 13px currentColor}.status.safe{color:var(--green)}.shell{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;padding-top:35px;padding-bottom:38px}.side{align-self:start;position:sticky;top:20px}.panel{background:linear-gradient(140deg,#1b262a,#171f23);border:1px solid var(--line);border-radius:8px;overflow:hidden}.side .panel{padding:19px}.case-number{font:36px var(--serif);color:var(--gold);line-height:1.2;margin:5px 0}.label{color:var(--muted);font:11px var(--mono);letter-spacing:.12em}.rule{height:1px;background:var(--line);margin:18px 0}.profile{display:flex;gap:13px;align-items:center}.portrait{width:66px;height:66px;object-fit:cover;border:1px solid #4d5956;border-radius:4px;background:#26312e;flex:none}.profile b{
+  display:block;
+  font-size:14px;
+  line-height:1.35;
+}
+
+.profile small{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.4;
+}.steps{display:grid;gap:7px;margin-top:12px}.step{display:flex;align-items:center;gap:11px;padding:9px 8px;border:1px solid transparent;border-radius:4px;color:var(--muted);font-size:13px}.step.active{border-color:#72664b;background:#d5b9810a;color:var(--gold)}.step.done{color:var(--green)}.step.locked{opacity:.58}.step i{font:11px var(--mono);width:24px;height:24px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-style:normal;flex:none}.progress{height:5px;border-radius:4px;background:#34423f;overflow:hidden;margin-top:11px}.progress span{display:block;height:100%;background:var(--gold);transition:width .4s}.main{min-width:0}.eyebrow{color:var(--gold);margin:0 0 7px}.hero{padding:30px;position:relative}.hero:after{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 5px,#ffffff02 6px);opacity:.5}h1,h2,h3,p{margin:0}h1,h2{font-family:var(--serif);font-weight:normal;line-height:1.15}h1{font-size:clamp(36px,6vw,60px);letter-spacing:-.045em}h2{font-size:clamp(29px,4vw,43px);letter-spacing:-.03em}.zh{font-size:23px;font-weight:600;color:var(--muted);margin:9px 0 19px}.lead{max-width:100%;color:#c5ceca;font-size:15px;white-space:pre-line;}.hero-head{display:flex;justify-content:space-between;gap:16px;align-items:start}.stamp{color:var(--red);border:1px solid currentColor;transform:rotate(-7deg);font:11px var(--mono);letter-spacing:.13em;padding:7px 10px;white-space:nowrap;align-self:center}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line)}.stat{background:#192326;padding:16px 22px}.stat b{display:block;font:32px var(--serif);color:var(--gold)}.stat span{font:10px var(--mono);color:var(--muted);letter-spacing:.1em}.block{padding:23px 26px;margin-top:17px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.section-head h3{font:600 14px var(--mono);letter-spacing:.10em;color:var(--gold)}.tag{border:1px solid #53615c;padding:3px 7px;color:var(--muted);font-size:10px;white-space:nowrap}.riddle{border-left:2px solid var(--gold);padding:17px 19px;margin:15px 0 18px;background:#10191b;color:#e1e3d8;font-size:17px;white-space:pre-line;line-height:1.95}.hint{margin:12px 0;color:var(--muted);font-size:14px}.hint summary{cursor:pointer;color:var(--gold);font-size:13px}.hint p{padding-top:8px}.inputrow{display:flex;gap:10px;margin-top:10px}.code{min-width:0;width:100%;flex:1;background:#0f1719;border:1px solid #4c5b55;border-radius:4px;color:var(--ink);padding:11px 13px;font:20px var(--mono);letter-spacing:.24em;text-transform:uppercase}.btn{background:var(--gold);border:1px solid var(--gold);color:#20251f;font-weight:750;border-radius:4px;padding:11px 19px;min-height:46px;white-space:normal}.btn:hover:not(:disabled){filter:brightness(1.12)}.btn.secondary{background:transparent;color:var(--gold);border-color:#6a624c}.feedback{min-height:24px;font-size:13px;color:var(--red);padding-top:6px}.note{color:var(--muted);font-size:13px}.successbox{border:1px solid #436856;background:#173029;padding:14px 17px;border-radius:5px;color:var(--green);margin:15px 0}.evidence-list{display:grid;gap:10px}.evidence{background:#141e21;border:1px solid var(--line);padding:13px 16px;border-radius:5px}.evidence summary{cursor:pointer;display:flex;align-items:center;gap:12px;list-style:none;color:var(--ink)}.evidence summary::-webkit-details-marker{display:none}.evidence summary:after{content:'+';color:var(--gold);margin-left:auto;font:20px var(--mono)}.evidence[open] summary:after{content:'−'}.evidence .body{margin:12px 0 3px;padding:12px 0 0;border-top:1px solid var(--line);color:#c6d1c9;font-size:15px;white-space:pre-line}.evnum{font:12px var(--mono);color:var(--gold);border:1px solid #75664c;padding:5px 7px}.choices{display:grid;gap:9px;margin:14px 0}.choice{display:flex;align-items:center;gap:10px;background:#131d20;border:1px solid var(--line);padding:12px;border-radius:4px;cursor:pointer}.choice:has(input:checked){border-color:var(--gold);background:#d5b9810d}.choice input{accent-color:var(--gold)}.wide{width:100%}.final{border-color:#7a6a4a;background:radial-gradient(ellipse at 100% 0%,#3d3229,transparent 55%),#202823}.final h1{color:var(--gold)}.letter{white-space:pre-line;line-height:2;color:#e4dbca;font-size:16px}.finalphoto{
+    display:block;
+    width:min(100%, 520px);
+    height:auto;
+    background:transparent;
+    border-radius:5px;
+    margin:15px auto 0;
+}.finalstats{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;gap:12px;padding:16px 0}.finalstats b{font:40px var(--serif);display:block;color:var(--gold)}.finalstats small{color:var(--muted)}.footer{border-top:1px solid var(--line);padding:17px 0 25px;color:var(--muted);font:10px var(--mono);letter-spacing:.09em}.footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}.reset{color:var(--muted);border:0;background:none;text-decoration:underline;font:11px var(--mono);padding:5px}.login{max-width:720px;margin:43px auto;padding:0 22px 35px}.login .hero{padding:32px}.login .block{margin-top:0;border-top:0;border-radius:0 0 8px 8px}.login .panel:first-child{border-radius:8px 8px 0 0}.loginmark{display:flex;align-items:center;gap:13px;margin-bottom:17px}.loginmark .seal{width:62px;height:62px}.loginmark .seal svg{width:36px;height:36px}.login .code{font-size:25px;letter-spacing:.35em}.fade{animation:enter .36s ease-out}@keyframes enter{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}@media(max-width:700px){.wrap{padding:0 16px}.top .wrap{min-height:65px;gap:8px}.brand{gap:8px}.brand strong{font-size:10px;letter-spacing:.07em}.brand .micro{font-size:9px}.seal{width:36px;height:36px}.seal svg{width:22px;height:22px}.status{font-size:9px;letter-spacing:0}.shell{display:flex;flex-direction:column;gap:14px;padding-top:15px;padding-bottom:24px}.side{position:static;width:100%}.side .panel{padding:13px}.side .profile,.side .rule,.side .case-number,.side .sidecase{display:none}.steps{display:flex;justify-content:space-between;gap:4px;margin-top:8px}.step{flex:1;min-width:0;flex-direction:column;gap:3px;padding:5px 2px;font-size:10px;text-align:center;line-height:1.4}.step i{width:21px;height:21px;font-size:10px}.hero,.block,.login .hero{padding:19px}.hero-head{gap:7px}.stamp{font-size:9px;padding:5px;letter-spacing:.03em}.stat{padding:12px 10px}.stat b{font-size:26px}.stat span{font-size:9px;letter-spacing:0}.riddle{font-size:16px;padding:13px}.inputrow{flex-wrap:wrap}.inputrow .btn{width:100%}.login{margin:26px auto;padding:0 16px 26px}.finalstats b{font-size:33px}.finalstats small{font-size:11px}.footer .wrap{align-items:start}.section-head h3{font-size:12px}.tag{font-size:9px}.code{font-size:20px}.login .code{font-size:22px}}
+
+/* Center login between header and footer */
+body { display: flex; flex-direction: column; min-height: 100vh; min-height: 100dvh; }
+.top, .footer { flex-shrink: 0; }
+#app { flex: 1 0 auto; display: flex; flex-direction: column; min-width: 0; }
+#app > .login { width: 100%; max-width: 720px; margin: auto; padding: 28px 22px; }
+#app > .shell { width: 100%; }
+@media (max-width: 700px) {
+  #app > .login { padding: 24px 16px; }
+}
+/* Header Logo Settings */
+.seal {
+    width: 30px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.seal img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Mobile Logo Settings */
+@media (max-width: 700px) {
+    .seal {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Final Memory Photo */
+.memoryphoto {
+    width: 100%;
+    max-width: 900px;
+    max-height: none;
+    height: auto;
+    object-fit: contain;
+    margin: 25px auto 0;
+}
+
+/* Remove heading focus outline */
+h1:focus,
+h2:focus {
+    outline: none;
+}
+
+</style></head><body><header class="top"><div class="wrap"><div class="brand"><div class="seal">
+    <img src="assets/IMG_5299.PNG" alt="Investigation Bureau Logo">
+</div><div><strong>HKJC INVESTIGATION BUREAU</strong><div class="micro">STARR HALL · 1402 Special Operations Division</div></div></div><div id="status" class="status">RESTRICTED</div></div></header><div id="app"></div><footer class="footer"><div class="wrap"><span>CASE 100 / CONFIDENTIAL<br>Fictional investigation experience</span><button id="reset" class="reset" hidden>重新開始</button></div></footer>
+<script>
+// =============== 只需修改這個設定區 / EDIT ONLY THIS BLOCK ===============
+const CONFIG = {
+  version: "operation100-v1", // 正式遊戲前可改為 operation100-live，清除舊測試進度
+  ponyNameZh: "紅藍駿星", ponyNameEn: "TWIN STAR", ponyPhoto: "assets/IMG_5297.jpg", // 例如 assets/pony.jpg；留空使用內建圖案
+  accessCode: "819260",
+  stages: [
+    {title:"The Missing Reins", zh:"消失的韁繩", file:"E-001", briefing:"現場第一份文件指出，失蹤者曾將一件重要物品交由神秘人保管。調查局成功破譯文件中的暗語。", riddle:"我不曾踏足賽場，\n卻記載著冠軍的每一場勝利。\n我不懂得書寫，\n卻能將無形的情報化為有形的證據。\n潔白的紙張是我的糧食，\n黑色的文字是我的言語。\n然而，真正的秘密並不在我吐出的文件之中，\n而是藏在我儲存糧食的最深處。\n偵探，請前往那裡，尋找第一件失落的證物。", hint:"一份一份的文件都將由此產出，看看他耗材區的最深處。", code:"0614", recovered:"第一件證物已確認。謎底密碼與案件資料相符；第二份加密情報已恢復。", giftLabel:"神秘物品 01"},
+    {title:"The Forgotten Companion", zh:"被遺忘的摯友", file:"E-002", briefing:"隨著第一件證物成功回收，調查局從紅藍駿星的歷史檔案中發現了一段鮮為人知的往事。\n在成為香港馬壇的傳奇之前，紅藍駿星曾有一位形影不離的朋友。\n\n然而，隨著賽馬生涯日漸繁忙，兩人逐漸失去了聯絡，至今已有多年未曾相見。\n\n最新截獲的情報顯示，這位久未露面的故友近日似乎再次出現在紅藍駿星的退休住所附近。\n\n調查局懷疑，牠的突然出現或許與本次失蹤事件存在某種關聯。", riddle:"我沒有翅膀，卻擁有無數羽毛；\n我從不畏懼寒冬，卻總在溫暖的季節被遺忘。\n在一排沉默的身影之中，\n我的身軀最為龐大。\n那位久別的故友，正藏身於我的懷抱，\n靜靜等待與昔日的冠軍重逢。\n偵探，妳能找到牠嗎？", hint:"天寒地凍，是時候穿上最保暖的厚外套。", code:"0813", recovered:"第二件證物已確認。新資料指出，失蹤者曾主動配合這次運送。第三份座標已解密。", giftLabel:"神秘物品 02"},
+    {title:"Beyond the Finish Line", zh:"終點之後", file:"E-003", briefing:"根據紅藍駿星昔日摯友的供詞，調查局得知，紅藍駿星在失蹤前曾秘密籌備一趟不同尋常的旅程。\n\n昔日在賽場上，紅藍駿星憑藉一套漆黑的馬蹄鐵，踏遍無數跑道，締造了百戰不敗的傳奇。\n然而，自從宣布退休後，這套象徵榮耀的裝備便再也沒有出現在公眾視野之中。\n\n最新情報顯示，紅藍駿星近日曾委託一名身份不明的人士，為牠準備一套全新的黑色馬蹄鐵。\n這一次，牠似乎並非為了重返賽場，而是為了一段更重要的旅程。\n\n調查局相信，只要尋獲這最後一件證物，便有機會揭開整宗失蹤案件背後的真相。", riddle:"我曾見過無數次離別，\n也曾見證無數次重逢。\n我沒有雙腳，卻能陪伴人們走遍遠方；\n我沒有記憶，卻收藏著每一段旅程的痕跡。\n當昔日的冠軍卸下榮耀，\n牠將下一段征途的希望託付於我。\n尋找那個尚未啟程的旅伴，\n最後的證物，就藏在它的心中。\n偵探，請打開通往下一段旅程的大門。", hint:"平時在很高的地方，只有要出遠門時才會回到地面", code:"1402", recovered:"全部三件證物皆已被確認。失蹤者已安全尋獲。調查局已解除 Agent 100 身份檔案的封存。", giftLabel:"神秘物品 03"}
+  ],
+  agentEvidence: [
+    {
+        title: "紅藍駿星的私人通訊紀錄",
+
+        text: "調查局成功復原紅藍駿星失蹤前的私人通訊紀錄，證實牠曾與一名身份不明的人士進行多次秘密會面。\n\n值得注意的是，紅藍駿星對此人表現出極高的信任，甚至主動將昔日使用的韁繩交由對方保管。\n\n根據現有證據推斷，Agent 100 並非外來人士，而是一位經常出現在紅藍駿星退休住所，且與本案偵探關係相當密切的人物。"
+    },
+
+    {
+        title: "昔日摯友的秘密供詞",
+
+        text: "根據紅藍駿星昔日摯友的供詞，Agent 100 曾向牠發出一份秘密邀請，希望牠能參與一項極具意義的行動。\n\n調查局成功取得當時的部分通訊內容：\n\n「她喜歡的東西，我一直都記得。希望你能在往後的日子裡陪伴著她，即使有時候我不在她身邊。」\n\n此外，Agent 100 更親自挑選了一套全新的黑色馬蹄鐵，希望紅藍駿星能穿著它，走向往後的每一段旅程。\n\n由此可見，此人對偵探的喜好、生活習慣都十分了解。"
+    },
+
+    {
+        title: "行動代號 100：最終機密文件",
+
+        text: "調查局在案件的最後一份文件中，發現了一段由 Agent 100 親自留下的文字：\n\n「紅與藍，本是兩種截然不同的色彩，卻在某一天相遇，從此成為了同一個故事。\n\n紅藍駿星用了100場比賽，締造屬於牠的傳奇。而我用了100天，與另一個人共同寫下了屬於我們的故事。\n\n這次行動並不是為了讓任何人失去什麼，而是為了讓一個重要的人，知道自己一直被珍惜著。」\n\n調查局終於明白，數字100所代表的，或許從來就不只是紅藍駿星的百場勝利。"
+    }
+  ],
+  agentOptions: ["小馬的前任練馬師", "一位神秘賽馬收藏家", "我的男朋友"], agentCorrect: 2,
+  agentName: "妳的男朋友", agentPhoto: "assets/IMG_Alex.jpg", // 例如 assets/agent.jpg；可填自己的暱稱
+  finalPhoto: "assets/Happy 100 Days!.png", // 例如 assets/together.jpg；私人照片勿公開上傳
+  finalLetter: "親愛的偵探：\n\n恭喜妳，成功破解了小馬失蹤案。\n\n其實，從一開始，這就不是一宗真正的失蹤案。紅藍駿星並沒有離開我們，而是悄悄答應了我的秘密委託，陪我一起完成這場只屬於妳的任務。\n\n這一路上，妳找到的每一件證物、解開的每一個線索，\n都是我想要向你傳達的心意，還有我們之間重要的點點滴滴。\n\n謝謝妳陪我度過這 100 天。\n這 100 天裡，因為有妳，很多平凡的時刻都變得特別；很多原本普通的日子，也因為妳而值得被記住。\n\n不管是開心的時候、累的時候、想分享事情的時候，還是只是想有人陪伴的時候，\n妳都讓我覺得，有妳在身邊，真的很好。\n\n希望今天的這場小小冒險，能成為我們往後一起想起來時，仍然會忍不住微笑的回憶。\n\n這不是終點線，而是我們下一段旅程的起點。\n\nHappy 100 days, my love, my Laam. ♡"
+};
+// ========================== END CONFIG ===========================
+const app=document.getElementById('app'), statusEl=document.getElementById('status'), reset=document.getElementById('reset');
+const KEY='last-race:'+CONFIG.version;const initial=()=>({step:0,reviewed:[],notice:''});
+let state=initial();try{const raw=JSON.parse(localStorage.getItem(KEY)||'null');if(raw&&Number.isInteger(raw.step)&&raw.step>=0&&raw.step<=5){state={step:raw.step,reviewed:Array.isArray(raw.reviewed)?raw.reviewed.filter(x=>Number.isInteger(x)&&x>=0&&x<3):[],notice:typeof raw.notice==='string'?raw.notice:''}}}catch{};
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}}
+const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const horseSvg=`<svg viewBox="0 0 80 80" aria-hidden="true" class="portrait"><rect width="80" height="80" fill="#26332f"/><path d="M19 67c0-18 4-26 13-35l-1-14 12 10 9-8 1 13 15 17c2 5-1 9-7 9l-12-4-5 12z" fill="#c7aa75" fill-opacity=".27" stroke="#d5b981" stroke-width="2"/><circle cx="51" cy="41" r="2" fill="#d5b981"/><path d="M31 33c-10 3-15 11-17 21" fill="none" stroke="#d5b981" stroke-width="2"/></svg>`;
+function photo(path,cls,alt){return path?`<img class="${cls}" src="${esc(path)}" alt="${esc(alt)}">`:''}
+function go(step,notice=''){state.step=step;state.notice=notice;save();render();window.scrollTo({top:0,behavior:'instant'});requestAnimationFrame(()=>{document.querySelector('main h1, main h2')?.focus({preventScroll:true})})}
+function head(title,zh,eyebrow,body,stamp='CLASSIFIED',stats=''){return `<section class="panel"><div class="hero"><p class="eyebrow">${esc(eyebrow)}</p><div class="hero-head"><h2 tabindex="-1">${esc(title)}</h2><span class="stamp">${esc(stamp)}</span></div><p class="zh">${esc(zh)}</p><p class="lead">${esc(body)}</p></div>${stats}</section>`}
+function sidebar(){
+  const names=['證物 01','證物 02','證物 03','身份調查','案件結案'];
+  return `
+  <aside class="side">
+    <div class="panel">
+      <div class="sidecase label">CASE FILE</div>
+      <div class="case-number">#100</div>
+
+      <div class="profile">
+        ${photo(CONFIG.ponyPhoto,'portrait',CONFIG.ponyNameZh || '紅藍駿星') || horseSvg}
+        <div>
+          <b>${esc(CONFIG.ponyNameZh || '紅藍駿星')}</b>
+          <b>${esc(CONFIG.ponyNameEn || 'TWIN STAR')}</b>
+          <small>THE PONY</small>
+          <small>100 races · 100 wins</small>
+        </div>
+      </div>
+
+      <div class="rule"></div>
+      <div class="label">INVESTIGATION PROGRESS · ${Math.min(3,Math.max(0,state.step-1))}/3</div>
+      <div class="progress">
+        <span style="width:${Math.min(100,(state.step-1)*25)}%"></span>
+      </div>
+
+      <nav class="steps" aria-label="案件進度">
+        ${names.map((n,i)=>`
+          <div class="step ${i+1<state.step?'done':i+1===state.step?'active':'locked'}" ${i+1===state.step?'aria-current="step"':''}>
+            <i>${i+1<state.step?'✓':String(i+1).padStart(2,'0')}</i>
+            <span>${n}</span>
+          </div>
+        `).join('')}
+      </nav>
+    </div>
+  </aside>`;
+}
+function form(id,len,button,label,desc){return `<form id="${id}" novalidate><label class="label" for="code">${esc(label)}</label><div class="inputrow"><input class="code" id="code" name="code" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="${len}" autocomplete="off" placeholder="${'•'.repeat(len)}" aria-describedby="feedback" required><button class="btn" type="submit">${esc(button)}</button></div><p id="feedback" class="feedback" role="status" aria-live="polite"></p><p class="note">${esc(desc)}</p></form>`}
+function bindCode(id,expected,onSuccess){const f=document.getElementById(id),input=f.querySelector('input'),fb=f.querySelector('.feedback');input.addEventListener('input',()=>{input.value=input.value.replace(/\D/g,'');fb.textContent='';input.removeAttribute('aria-invalid')});f.addEventListener('submit',e=>{e.preventDefault();if(input.value.trim()===expected){onSuccess();return}fb.textContent=input.value.length!==expected.length?`請輸入 ${expected.length} 位數字。`:'驗證失敗。請重新檢查證據上的數字。';input.setAttribute('aria-invalid','true');input.focus()})}
+function login(){app.innerHTML=`<main class="login fade"><section class="panel"><div class="hero"><div class="loginmark"><span class="label">SPECIAL OPERATIONS / CASE 100</span><span class="stamp">RESTRICTED</span></div><p class="eyebrow">Missing subject investigation</p><h1 tabindex="-1">THE LAST RACE<span style="color:var(--gold)">.</span></h1><p class="zh">OPERATION 100 · 傳奇賽馬失蹤案</p><p class="lead">紅藍駿星（TWIN STAR），香港馬壇史上最具傳奇色彩的賽馬之一，曾以百戰不敗的輝煌戰績締造無人能及的紀錄。退役後，牠遠離昔日的榮耀與喧囂，過著平靜而愜意的退休生活。
+
+然而，紅藍駿星近日突然從退休住所離奇失蹤。現場並未發現任何明顯的打鬥痕跡，僅留下一份來源不明的神秘文件。
+
+經調查局初步分析，本案極有可能涉及一項經過周密策劃的秘密行動。三份與失蹤者密切相關的關鍵情報已被列為機密，等待進一步調查。
+
+偵探，妳已被正式委任負責本次案件。
+
+請破解現場遺留的謎題，取得案件檔案的存取權限，尋回失蹤的紅藍駿星，並揭開整宗事件背後的真相。</p></div></section><section class="panel block"><div class="section-head"><h3>ACCESS CONTROL</h3></span></div>${form('loginform',CONFIG.accessCode.length,'Authenticate / 驗證','ACCESS CODE / 存取密碼','請使用失蹤現場的神秘文件，破解其中的謎題，取得6位數字密碼。')}</section></main>`;bindCode('loginform',CONFIG.accessCode,()=>go(1));}
+function stage(){const i=state.step-1,s=CONFIG.stages[i];const stats=`<div class="stats"><div class="stat"><b>100</b><span>CASE NUMBER</span></div><div class="stat"><b>0${i}/03</b><span>RECOVERED</span></div><div class="stat"><b>0${i+1}</b><span>ACTIVE FILE</span></div></div>`;return `${head(s.title,s.zh,'STAGE 0'+(i+1)+' / EVIDENCE RECOVERY',i===0?`${CONFIG.ponyNameZh}曾在香港馬壇締造100場不敗紀錄，退休後某天卻在住所離奇消失。\n調查局發現三件關鍵物品，必須依序找出其所在位置才能還原案情。`:s.briefing,'ACTIVE FILE',stats)}${state.notice?`<div class="successbox" role="status">✓ ${esc(state.notice)}</div>`:''}<section class="panel block"><div class="section-head"><h3>CRITICAL DOCUMENT</h3></div>${i===0?`<p class="lead">${esc(s.briefing)}</p>`:''}<div class="riddle">${esc(s.riddle)}</div><details class="hint"><summary>申請調查局提示 / Request a hint</summary><p>${esc(s.hint)}</p></details></section><section class="panel block"><div class="section-head"><h3>PASSCODE VERIFICATION</h3></div><p class="lead">找到實體證物後，請破解證物上面的小謎題。輸入謎底才能繼續。</p>${form('evidenceform',s.code.length,'Verify Passcode / 驗證密碼','RECOVERY CODE / 謎底密碼','請勿跳過此證物的搜查。下一份檔案仍處於封存狀態。')}</section>`}
+function agent(){return `${head('Who is Agent 100?','最終身份調查','FINAL INVESTIGATION / IDENTITY FILE','隨著三件關鍵證物全數尋獲，調查局終於掌握了紅藍駿星失蹤案件的完整脈絡。\n\n然而，經過進一步分析，調查人員發現，從韁繩的遺失、昔日摯友的重現，到全新馬蹄鐵的準備，\n所有事件似乎並非巧合，而是由同一名神秘人士精心安排。\n\n此人的行動代號為 AGENT 100。\n\n調查局已成功復原三份足以辨認其身份的關鍵情報。偵探，請審閱以下證據，為這宗離奇案件揭開最後的謎底。','DECLASSIFIED')}${state.notice?`<div class="successbox">✓ ${esc(state.notice)}</div>`:''}<section class="panel block"><div class="section-head"><h3>ESSENTIAL CLUES</h3><span class="tag" id="review-count">${new Set(state.reviewed).size}/3 REVIEWED</span></div><div class="evidence-list">${CONFIG.agentEvidence.map((e,i)=>`<details class="evidence" data-index="${i}"><summary><span class="evnum">0${i+1}</span><span>${esc(e.title)}</span></summary><div class="body">${esc(e.text)}</div></details>`).join('')}</div></section><section class="panel block"><div class="section-head"><h3>IDENTITY CONFIRMATION</h3></span></div><p class="lead">根據目前的證據，妳認為誰才是真正的 Agent 100？</p><form id="agentform"><div class="choices">${CONFIG.agentOptions.map((x,i)=>`<label class="choice"><input type="radio" name="suspect" value="${i}" required> ${esc(x)}</label>`).join('')}</div><button id="agent-submit" class="btn wide" ${new Set(state.reviewed).size<3?'disabled':''}>Submit Final Report / 提交最終報告</button><p class="feedback" id="agentfeedback" role="status">${new Set(state.reviewed).size<3?'請先查閱全部三份情報。':''}</p></form></section>`}
+function final(){return `<section class="panel final"><div class="hero"><p class="eyebrow">OPERATION 100 / MISSION COMPLETE</p><div class="hero-head"><h1 tabindex="-1">CASE<br>CLOSED.</h1><span class="stamp" style="color:var(--green)">RESOLVED</span></div><p class="zh">Agent 100 的真實身份已確認</p><p class="lead">幕後主使：${esc(CONFIG.agentName)}。紅藍駿星並未遭到真正的綁架，而是自願接受委託，為妳完成一項特別的秘密任務。</p>${photo(CONFIG.agentPhoto,'finalphoto','Agent 100')}</div></section><section class="panel block final"><div class="section-head"><h3>PERSONAL COMMUNICATION</h3><span class="tag">FOR YOUR EYES ONLY</span></div><h2 style="color:var(--gold);margin:8px 0 19px">Happy 100 days.</h2><p class="letter">${esc(CONFIG.finalLetter)}</p>${photo(CONFIG.finalPhoto,'finalphoto memoryphoto','我們的回憶')}<div class="rule"></div><div class="finalstats">
+    <div>
+        <b>100</b>
+        <small>Days together</small>
+    </div>
+    <div>
+        <b>2</b>
+        <small>Hearts, one story</small>
+    </div>
+    <div>
+        <b>∞</b>
+        <small>Memories to come</small>
+    </div>
+</div><p class="note" style="text-align:center">Thanks for joining my life. ♡</p></section>`}
+function render(){reset.hidden=state.step===0;statusEl.textContent=state.step===0?'RESTRICTED':state.step===5?'CASE CLOSED':state.step===4?'SUBJECT SAFE':'SUBJECT MISSING';statusEl.classList.toggle('safe',state.step>=4);if(state.step===0){login();return}app.innerHTML=`<div class="wrap shell">${sidebar()}<main class="main fade">${state.step<=3?stage():state.step===4?agent():final()}</main></div>`;if(state.step<=3){const s=CONFIG.stages[state.step-1];bindCode('evidenceform',s.code,()=>go(state.step+1,s.recovered));}if(state.step===4){const update=()=>{const n=new Set(state.reviewed).size;document.getElementById('review-count').textContent=`${n}/3 REVIEWED`;document.getElementById('agent-submit').disabled=n<3;if(n===3)document.getElementById('agentfeedback').textContent=''};document.querySelectorAll('.evidence').forEach(el=>{if(state.reviewed.includes(Number(el.dataset.index)))el.open=true;el.addEventListener('toggle',()=>{if(el.open){const i=Number(el.dataset.index);if(!state.reviewed.includes(i)){state.reviewed.push(i);save();update()}}})});document.getElementById('agentform').addEventListener('submit',e=>{e.preventDefault();if(new Set(state.reviewed).size<3)return;const answer=new FormData(e.target).get('suspect');if(answer!==null&&Number(answer)===CONFIG.agentCorrect)go(5);else document.getElementById('agentfeedback').textContent='現有情報不足以支持此身份。請再看看三份證據。'});}}
+reset.addEventListener('click',()=>{if(confirm('確定重新開始？所有調查進度將被清除。')){state=initial();save();render();window.scrollTo(0,0)}});render();
+</script></body></html>
